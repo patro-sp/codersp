@@ -1,0 +1,17 @@
+you have m no of stalls and n no of cows.the problem is cows become aggresive if they are at same place so we have to keep the distance  maximum between any two cows .....
+so our task is to place the cows in such a way that the min diastance between any two cow should be maximum...
+
+ex-
+suppose there are 5 stalls...at locations 1,2,4,8,9 and there are 3 cows...
+so 1 cow at 1 , 2nd cow at 4 at last cow at 8 or 9...therefore the minimunm distance is 3...so output should be 3....
+
+the searchspace is between 0 to 8(9-1).
+we will do the binary search and check with this min distance can we keep all the cows? here mid=4
+if the min distance is 4 ,1st cow at 1 ,2nd cow at 1+4=5<8 so at 8,for the last cow there is no stall ......so this is not possible..so e=4-1=3
+
+now mid=1...check....1st at 1 ,2nd at 2 and 3rd at 4
+so now we have to check can we also keep the cows with the min diastance >1....so s=1+1=2;
+
+now mid=2...do again
+
+and finally the ans is 3.... 
